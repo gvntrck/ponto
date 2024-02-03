@@ -28,6 +28,8 @@ $query = "SELECT * FROM {$wpdb->prefix}ponto WHERE YEAR(data) = '{$anoSelecionad
 $resultados = $wpdb->get_results($query);
 
 
+
+
 function traduzirDiaDaSemana($diaEmIngles)
 {
     $dias = [
