@@ -5,11 +5,6 @@ require_once('../wp-load.php');
 require_once('verificaAcesso.php');
 
 
-/* if (!is_user_logged_in()) {
-    $redirect_url = urlencode($_SERVER['REQUEST_URI']);
-    wp_redirect(wp_login_url($redirect_url));
-    exit;
-} */
 
 // Busca anos disponíveis
 $queryAnos = "SELECT DISTINCT YEAR(data) AS ano FROM {$wpdb->prefix}ponto ORDER BY ano DESC";
