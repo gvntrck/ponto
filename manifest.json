@@ -1,0 +1,19 @@
+{
+    "short_name": "PontoApp",
+    "name": "Registro de Ponto",
+    "icons": [
+      {
+        "src": "icon.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      }
+    ],
+    "start_url": "/ponto/index.php",
+    "background_color": "#FFFFFF",
+    "display": "standalone",
+    "scope": "/",
+    "theme_color": "#FFFFFF",
+    "id": "PontoApp-gvntrck",
+    "description": "Registro de ponto",
+
+  }
