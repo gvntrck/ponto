@@ -24,7 +24,7 @@
 
 <body>
     <div class="container">
-        <h2>Registro de Ponto 1.1.1.2</h2>
+        <h2>Registro de Ponto</h2>
         <form class="form-horizontal" id="pontoForm">
             <div class="form-group">
                 <label for="comentario">Comentário:</label>
