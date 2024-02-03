@@ -5,14 +5,12 @@ require_once('../wp-load.php');
 require_once('verificaAcesso.php');
 
 
-/* if (!is_user_logged_in()) {
-    $redirect_url = urlencode($_SERVER['REQUEST_URI']);
-    wp_redirect(wp_login_url($redirect_url));
-    exit;
-} */
+
+// Obtem o ID do usuário logado
+$current_user_id = get_current_user_id();
 
 // Busca anos disponíveis
-$queryAnos = "SELECT DISTINCT YEAR(data) AS ano FROM {$wpdb->prefix}ponto ORDER BY ano DESC";
+$queryAnos = "SELECT DISTINCT YEAR(data) AS ano FROM {$wpdb->prefix}ponto WHERE user_id = '{$current_user_id}' ORDER BY ano DESC";
 $anos = $wpdb->get_results($queryAnos);
 
 // Define ano e mês selecionados (padrão: ano e mês atual)
@@ -20,11 +18,11 @@ $anoSelecionado = isset($_GET['ano']) ? $_GET['ano'] : date('Y');
 $mesSelecionado = isset($_GET['mes']) ? $_GET['mes'] : date('m');
 
 // Busca meses disponíveis no ano selecionado
-$queryMeses = "SELECT DISTINCT MONTH(data) AS mes FROM {$wpdb->prefix}ponto WHERE YEAR(data) = '{$anoSelecionado}' ORDER BY mes DESC";
+$queryMeses = "SELECT DISTINCT MONTH(data) AS mes FROM {$wpdb->prefix}ponto WHERE YEAR(data) = '{$anoSelecionado}' AND user_id = '{$current_user_id}' ORDER BY mes DESC";
 $meses = $wpdb->get_results($queryMeses);
 
 // Filtra resultados com base no ano e mês selecionados
-$query = "SELECT * FROM {$wpdb->prefix}ponto WHERE YEAR(data) = '{$anoSelecionado}' AND MONTH(data) = '{$mesSelecionado}' ORDER BY data DESC";
+$query = "SELECT * FROM {$wpdb->prefix}ponto WHERE YEAR(data) = '{$anoSelecionado}' AND MONTH(data) = '{$mesSelecionado}' AND user_id = '{$current_user_id}' ORDER BY data DESC";
 $resultados = $wpdb->get_results($query);
 
 
