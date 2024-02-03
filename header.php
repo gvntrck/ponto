@@ -36,9 +36,7 @@
                 <li class="nav-item">
                     <a class="nav-link" href="logout.php">Sair</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="">v1</a>
-                </li>
+
 
 
 
@@ -61,7 +59,9 @@
                     </a>
 
                 </li>
-
+                <li class="nav-item">
+                    <a class="nav-link" href="#">v1</a>
+                </li>
 
 
 
