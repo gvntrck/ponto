@@ -1,12 +1,3 @@
-/**
- * Verifica se o usuário tem acesso ao sistema especificado.
- *
- * @param string $sistema O nome do sistema a ser verificado.
- * @return bool Retorna true se o usuário tiver permissão de acesso, caso contrário redireciona para a página 'sem acesso'.
- */
-function verificar_acesso($sistema) {
-    // ...
-}
 <?php
 require_once('../wp-load.php');
 
