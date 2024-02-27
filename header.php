@@ -60,7 +60,7 @@
 
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">v1</a>
+                    <a class="nav-link" href="#">v1.3</a>
                 </li>
 
 
