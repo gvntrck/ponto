@@ -1,3 +1,18 @@
+/**
+ * FILEPATH: /gvntrck/ponto/dashboard.php
+ *
+ * Este arquivo representa a página do painel de controle do aplicativo.
+ * Ele exibe o total de horas extras para o mês e a semana atual.
+ * Os cálculos são baseados nos registros de tempo do usuário armazenados no banco de dados.
+ *
+ * As seguintes funções são definidas neste arquivo:
+ *
+ * - calcularTotalHorasDia(): Calcula o total de horas trabalhadas em um dia, levando em consideração o intervalo de almoço e horas extras.
+ * - calcularTotalExtras(): Calcula o total de horas extras em um dia.
+ *
+ * O arquivo também inclui as dependências necessárias e realiza consultas ao banco de dados para recuperar os registros de tempo.
+ * Os dados recuperados são usados para calcular o total de horas extras para o mês e a semana.
+ */
 <!DOCTYPE html>
 <html lang="pt-BR">
 
