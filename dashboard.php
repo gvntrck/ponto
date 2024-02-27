@@ -1,4 +1,4 @@
-/**
+<!--  /**
  * FILEPATH: /gvntrck/ponto/dashboard.php
  *
  * Este arquivo representa a página do painel de controle do aplicativo.
@@ -13,6 +13,7 @@
  * O arquivo também inclui as dependências necessárias e realiza consultas ao banco de dados para recuperar os registros de tempo.
  * Os dados recuperados são usados para calcular o total de horas extras para o mês e a semana.
  */
+   -->
 <!DOCTYPE html>
 <html lang="pt-BR">
 
