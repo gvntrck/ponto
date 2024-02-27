@@ -177,7 +177,7 @@ function calcularTotalExtras($entrada, $saida, $entradaAlmoco, $retornoAlmoco, $
             <tbody>
                 <?php foreach ($resultados as $registro): ?>
                     <tr>
-                        <td>
+                        <td style="white-space: nowrap;">
                             <?= $registro->data ?>
                         </td>
                         <td>
